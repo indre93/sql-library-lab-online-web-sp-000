@@ -24,17 +24,14 @@ end
 def select_name_and_series_subgenres_of_authors
   "SELECT authors.name, subgenres.name
   FROM authors
-  JOIN series
-  ON authors.id = series.id
+  JOIN series ON authors.id = series.id
   INNER JOIN subgenres
   ON series.subgenre_id = subgenres.id"
 end
 
 def select_series_title_with_most_human_characters
-  "SELECT series.title
-  FROM series
-  JOIN characters
-  ON series.id = characters.id
+  "SELECT series.title FROM series
+  JOIN characters ON series.id = characters.id
   GROUP BY series.title
   ORDER BY SUM(characters.species)
   LIMIT 1"
