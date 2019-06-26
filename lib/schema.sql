@@ -25,9 +25,10 @@ series_id INTEGER
 CREATE TABLE characters (
 id INTEGER PRIMARY KEY,
 name TEXT,
-age INTEGER,
-breed TEXT,
-net_worth INTEGER
+motto TEXT,
+species TEXT,
+author_id INTEGER,
+series_id INTEGER
 );
 
 CREATE TABLE character_books (
