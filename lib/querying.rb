@@ -35,7 +35,6 @@ def select_series_title_with_most_human_characters
   FROM series
   JOIN characters
   ON series.id = characters.series_id
-  WHERE characters.species = 'human'
   ORDER BY MAX(characters.species)
   LIMIT 1"
 end
