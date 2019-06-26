@@ -7,26 +7,19 @@ subgenre_id INTEGER
 
 CREATE TABLE subgenres (
 id INTEGER PRIMARY KEY,
-name TEXT,
-age INTEGER,
-breed TEXT,
-net_worth INTEGER
+name TEXT
 );
 
 CREATE TABLE authors (
 id INTEGER PRIMARY KEY,
-name TEXT,
-age INTEGER,
-breed TEXT,
-net_worth INTEGER
+name TEXT
 );
 
 CREATE TABLE books (
 id INTEGER PRIMARY KEY,
-name TEXT,
-age INTEGER,
-breed TEXT,
-net_worth INTEGER
+title TEXT,
+year INTEGER,
+series_id INTEGER
 );
 
 CREATE TABLE characters (
